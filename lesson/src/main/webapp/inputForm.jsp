@@ -1,14 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>お問い合わせフォーム</title>
+<link rel="stylesheet" href="<%= request.getContextPath() %>/css/style.css">
 </head>
 <body>
+<div class="container">
 <form action="submitForm" method="post">
+<h1>お問い合わせフォーム</h1>
 	<p>お名前<br>
 		<input type="text" name="name"/></p>
 	<p>お住まいの地域<br>
@@ -33,5 +37,6 @@
 			<textarea name="detail" cols="30" rows="5"></textarea></p>
 		<p><input type="submit" value="送信"/></p>
 </form>
+</div>
 </body>
 </html>

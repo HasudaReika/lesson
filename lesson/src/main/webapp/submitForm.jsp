@@ -14,8 +14,10 @@ String detail = (String) request.getAttribute("detail");
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="<%= request.getContextPath() %>/css/style.css">
 </head>
 <body>
+<div class="container">
 	<p>送信しました</p>
 	<p>お問い合わせ内容<br>
 		お名前： <%=name %><br>
@@ -24,6 +26,6 @@ String detail = (String) request.getAttribute("detail");
 		メールアドレス： <%=mail %><br>
 		お問い合わせ種類： <%=type %><br>
 		お問い合わせ内容： <%=detail %>
-
+</div>
 </body>
 </html>
